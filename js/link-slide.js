@@ -6,7 +6,7 @@ let linkImgFive = document.getElementById('linkImgFive');
 let linkVideo = document.getElementById('linkVideo');
 
 linkImgOne.onclick = function() {
-    newImg.setAttribute('src', './img/nature-1.jpg');
+    newImg.setAttribute('src', '/img/nature-1.jpg');
     newImg.setAttribute('data-nature', "1");
     imgOne.classList.add('borderRed');
     imgTwo.classList.remove('borderRed');
@@ -18,7 +18,7 @@ linkImgOne.onclick = function() {
 }
 
 linkImgTwo.onclick = function () {
-    newImg.setAttribute('src', './img/nature-2.jpg');
+    newImg.setAttribute('src', '/img/nature-2.jpg');
     newImg.setAttribute('data-nature', "2");
     imgTwo.classList.add('borderRed');
     imgOne.classList.remove('borderRed');
@@ -30,7 +30,7 @@ linkImgTwo.onclick = function () {
 }
 
 linkImgThree.onclick = function () {
-    newImg.setAttribute('src', './img/nature-3.jpg');
+    newImg.setAttribute('src', '/img/nature-3.jpg');
     newImg.setAttribute('data-nature', "3");
     imgThree.classList.add('borderRed');
     imgOne.classList.remove('borderRed');
@@ -42,7 +42,7 @@ linkImgThree.onclick = function () {
 }
 
 linkImgFour.onclick = function () {
-    newImg.setAttribute('src', './img/nature-4.jpg');
+    newImg.setAttribute('src', '/img/nature-4.jpg');
     newImg.setAttribute('data-nature', "4");
     imgFour.classList.add('borderRed');
     imgOne.classList.remove('borderRed');
@@ -54,7 +54,7 @@ linkImgFour.onclick = function () {
 }
 
 linkImgFive.onclick = function () {
-    newImg.setAttribute('src', './img/nature-5.jpg');
+    newImg.setAttribute('src', '/img/nature-5.jpg');
     newImg.setAttribute('data-nature', "5");
     imgFive.classList.add('borderRed');
     imgOne.classList.remove('borderRed');
@@ -67,10 +67,10 @@ linkImgFive.onclick = function () {
 
 linkVideo.onclick = function () {
     newImg.classList.add('hidden');
-    newImg.setAttribute('src', './img/nature-5.jpg');
+    newImg.setAttribute('src', '/img/nature-5.jpg');
     newImg.setAttribute('data-nature', "6");
     newVideo.classList.remove('hidden');
-    newVideo.setAttribute('src', './video/nature.mp4');
+    newVideo.setAttribute('src', '/video/nature.mp4');
     videoOne.classList.add('borderRed');
     imgFive.classList.remove('borderRed');
     imgOne.classList.remove('borderRed');
