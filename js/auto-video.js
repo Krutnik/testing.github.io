@@ -1,11 +1,4 @@
-// let btnSlideLeft = document.getElementById('btnLeft');
-// let btnSlideRight = document.getElementById('btnRight');
-
-// let imgOne = document.querySelector('#imgOne');
-// let imgTwo = document.querySelector('#imgTwo');
-// let imgThree = document.querySelector('#imgThree');
-// let imgFour = document.querySelector('#imgFour');
-// let imgFive = document.querySelector('#imgFive');
+let newVideo = document.querySelector('#newVideo');
 let videoOne = document.querySelector('#videoOne');
 
 btnSlideLeft.onclick = function () {
@@ -86,12 +79,20 @@ btnSlideRight.onclick = function () {
         newImg.setAttribute('src', '/img/nature-5.jpg');
         newImg.setAttribute('data-nature', "5");
     } else if (newImg.getAttribute('src') == '/img/nature-5.jpg' && newImg.getAttribute('data-nature') == 5) {
-        
-    } 
-    // else if (newImg.getAttribute('src') == '' && newImg.getAttribute('') == ) {
-    //     newImg.setAttribute('src', '/img/nature-1.jpg');
-    //     newImg.setAttribute('data-nature', "1");
-    // }
+        // newImg.setAttribute('src', '/img/nature-5.jpg');
+        newImg.setAttribute('data-nature', "6");
+        newImg.classList.add('hidden');
+        newVideo.classList.remove('hidden');
+        videoOne.classList.add('borderRed');
+        newVideo.setAttribute('src', '/video/nature.mp4');
+    } else if (newImg.getAttribute('src') == '/img/nature-5.jpg' && newImg.getAttribute('data-nature') == 6) {
+        newVideo.classList.add('hidden');
+        videoOne.classList.remove('borderRed');
+        newVideo.removeAttribute('src');
+        newImg.classList.remove('hidden');
+        newImg.setAttribute('src', '/img/nature-1.jpg');
+        newImg.setAttribute('data-nature', "1");
+    }
 
     function check() {
         if (newImg.getAttribute('data-nature') == 1) {

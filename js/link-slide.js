@@ -3,6 +3,7 @@ let linkImgTwo = document.getElementById('linkImgTwo');
 let linkImgThree = document.getElementById('linkImgThree');
 let linkImgFour = document.getElementById('linkImgFour');
 let linkImgFive = document.getElementById('linkImgFive');
+let linkVideo = document.getElementById('linkVideo');
 
 linkImgOne.onclick = function() {
     newImg.setAttribute('src', '/img/nature-1.jpg');
@@ -12,6 +13,12 @@ linkImgOne.onclick = function() {
     imgThree.classList.remove('borderRed');
     imgFour.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
+
+    // выполнить через проверку
+    newImg.classList.remove('hidden');
+    // выполнить через проверку
+    newVideo.classList.add('hidden');
+    videoOne.classList.remove('borderRed');
 }
 
 linkImgTwo.onclick = function () {
@@ -22,6 +29,12 @@ linkImgTwo.onclick = function () {
     imgThree.classList.remove('borderRed');
     imgFour.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
+
+    // выполнить через проверку
+    newImg.classList.remove('hidden');
+    // выполнить через проверку
+    newVideo.classList.add('hidden');
+    videoOne.classList.remove('borderRed');
 }
 
 linkImgThree.onclick = function () {
@@ -32,6 +45,12 @@ linkImgThree.onclick = function () {
     imgTwo.classList.remove('borderRed');
     imgFour.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
+
+    // выполнить через проверку
+    newImg.classList.remove('hidden');
+    // выполнить через проверку
+    newVideo.classList.add('hidden');
+    videoOne.classList.remove('borderRed');
 }
 
 linkImgFour.onclick = function () {
@@ -42,14 +61,45 @@ linkImgFour.onclick = function () {
     imgTwo.classList.remove('borderRed');
     imgThree.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
+
+    // выполнить через проверку
+    newImg.classList.remove('hidden');
+    // выполнить через проверку
+    newVideo.classList.add('hidden');
+    videoOne.classList.remove('borderRed');
 }
 
 linkImgFive.onclick = function () {
     newImg.setAttribute('src', '/img/nature-5.jpg');
     newImg.setAttribute('data-nature', "5");
+    // выполнить через проверку
+    newImg.classList.remove('hidden');
+
     imgFive.classList.add('borderRed');
     imgOne.classList.remove('borderRed');
     imgTwo.classList.remove('borderRed');
     imgThree.classList.remove('borderRed');
     imgFour.classList.remove('borderRed');
+
+    // выполнить через проверку
+    newVideo.classList.add('hidden');
+    videoOne.classList.remove('borderRed');
+}
+
+linkVideo.onclick = function () {
+    newImg.classList.add('hidden');
+    newImg.setAttribute('src', '/img/nature-5.jpg');
+    newImg.setAttribute('data-nature', "6");
+    newVideo.classList.remove('hidden');
+    newVideo.setAttribute('src', '/video/nature.mp4');
+    videoOne.classList.add('borderRed');
+    imgFive.classList.remove('borderRed');
+    imgOne.classList.remove('borderRed');
+    imgTwo.classList.remove('borderRed');
+    imgThree.classList.remove('borderRed');
+    imgFour.classList.remove('borderRed');
+}
+
+function showHidden() {
+    
 }
