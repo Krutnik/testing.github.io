@@ -14,11 +14,7 @@ linkImgOne.onclick = function() {
     imgFour.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
 
-    // выполнить через проверку
-    newImg.classList.remove('hidden');
-    // выполнить через проверку
-    newVideo.classList.add('hidden');
-    videoOne.classList.remove('borderRed');
+    showHidden()
 }
 
 linkImgTwo.onclick = function () {
@@ -30,11 +26,7 @@ linkImgTwo.onclick = function () {
     imgFour.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
 
-    // выполнить через проверку
-    newImg.classList.remove('hidden');
-    // выполнить через проверку
-    newVideo.classList.add('hidden');
-    videoOne.classList.remove('borderRed');
+    showHidden()
 }
 
 linkImgThree.onclick = function () {
@@ -46,11 +38,7 @@ linkImgThree.onclick = function () {
     imgFour.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
 
-    // выполнить через проверку
-    newImg.classList.remove('hidden');
-    // выполнить через проверку
-    newVideo.classList.add('hidden');
-    videoOne.classList.remove('borderRed');
+    showHidden()
 }
 
 linkImgFour.onclick = function () {
@@ -62,28 +50,19 @@ linkImgFour.onclick = function () {
     imgThree.classList.remove('borderRed');
     imgFive.classList.remove('borderRed');
 
-    // выполнить через проверку
-    newImg.classList.remove('hidden');
-    // выполнить через проверку
-    newVideo.classList.add('hidden');
-    videoOne.classList.remove('borderRed');
+    showHidden()
 }
 
 linkImgFive.onclick = function () {
     newImg.setAttribute('src', '/img/nature-5.jpg');
     newImg.setAttribute('data-nature', "5");
-    // выполнить через проверку
-    newImg.classList.remove('hidden');
-
     imgFive.classList.add('borderRed');
     imgOne.classList.remove('borderRed');
     imgTwo.classList.remove('borderRed');
     imgThree.classList.remove('borderRed');
     imgFour.classList.remove('borderRed');
 
-    // выполнить через проверку
-    newVideo.classList.add('hidden');
-    videoOne.classList.remove('borderRed');
+    showHidden()
 }
 
 linkVideo.onclick = function () {
@@ -101,5 +80,11 @@ linkVideo.onclick = function () {
 }
 
 function showHidden() {
-    
+    if(newImg.classList.contains('hidden') == true) {
+        newImg.classList.remove('hidden');
+    }
+    if (newVideo.classList.contains('hidden') == false) {
+        newVideo.classList.add('hidden');
+        videoOne.classList.remove('borderRed');
+    }
 }
