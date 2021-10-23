@@ -11,30 +11,30 @@ let newVideo = document.querySelector('#newVideo');
 let videoOne = document.querySelector('#videoOne');
 
 btnSlideLeft.onclick = function () {
-    if (newImg.getAttribute('src') == '/img/nature-1.jpg' && newImg.getAttribute('data-nature') == 1) {
+    if (newImg.getAttribute('src') == './img/nature-1.jpg' && newImg.getAttribute('data-nature') == 1) {
         newImg.setAttribute('data-nature', "6");
         newImg.classList.add('hidden');
         newVideo.classList.remove('hidden');
         videoOne.classList.add('borderRed');
-        newVideo.setAttribute('src', '/video/nature.mp4');
-    } else if (newImg.getAttribute('src') == '/img/nature-1.jpg' && newImg.getAttribute('data-nature') == 6) {
+        newVideo.setAttribute('src', '../video/nature.mp4');
+    } else if (newImg.getAttribute('src') == './img/nature-1.jpg' && newImg.getAttribute('data-nature') == 6) {
         newVideo.classList.add('hidden');
         videoOne.classList.remove('borderRed');
         newVideo.removeAttribute('src');
         newImg.classList.remove('hidden');
-        newImg.setAttribute('src', '/img/nature-5.jpg');
+        newImg.setAttribute('src', './img/nature-5.jpg');
         newImg.setAttribute('data-nature', "5");
-    } else if (newImg.getAttribute('src') == '/img/nature-5.jpg' && newImg.getAttribute('data-nature') == 5) {
-        newImg.setAttribute('src', '/img/nature-4.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-5.jpg' && newImg.getAttribute('data-nature') == 5) {
+        newImg.setAttribute('src', './img/nature-4.jpg');
         newImg.setAttribute('data-nature', "4");
-    } else if (newImg.getAttribute('src') == '/img/nature-4.jpg' && newImg.getAttribute('data-nature') == 4) {
-        newImg.setAttribute('src', '/img/nature-3.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-4.jpg' && newImg.getAttribute('data-nature') == 4) {
+        newImg.setAttribute('src', './img/nature-3.jpg');
         newImg.setAttribute('data-nature', "3");
-    } else if (newImg.getAttribute('src') == '/img/nature-3.jpg' && newImg.getAttribute('data-nature') == 3) {
-        newImg.setAttribute('src', '/img/nature-2.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-3.jpg' && newImg.getAttribute('data-nature') == 3) {
+        newImg.setAttribute('src', './img/nature-2.jpg');
         newImg.setAttribute('data-nature', "2");
-    } else if (newImg.getAttribute('src') == '/img/nature-2.jpg' && newImg.getAttribute('data-nature') == 2) {
-        newImg.setAttribute('src', '/img/nature-1.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-2.jpg' && newImg.getAttribute('data-nature') == 2) {
+        newImg.setAttribute('src', './img/nature-1.jpg');
         newImg.setAttribute('data-nature', "1");
     }
 
@@ -85,30 +85,30 @@ btnSlideLeft.onclick = function () {
 }
 
 btnSlideRight.onclick = function () {
-    if (newImg.getAttribute('src') == '/img/nature-1.jpg' && newImg.getAttribute('data-nature') == 1) {
-        newImg.setAttribute('src', '/img/nature-2.jpg');
+    if (newImg.getAttribute('src') == './img/nature-1.jpg' && newImg.getAttribute('data-nature') == 1) {
+        newImg.setAttribute('src', './img/nature-2.jpg');
         newImg.setAttribute('data-nature', "2");
-    } else if (newImg.getAttribute('src') == '/img/nature-2.jpg' && newImg.getAttribute('data-nature') == 2) {
-        newImg.setAttribute('src', '/img/nature-3.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-2.jpg' && newImg.getAttribute('data-nature') == 2) {
+        newImg.setAttribute('src', './img/nature-3.jpg');
         newImg.setAttribute('data-nature', "3");
-    } else if (newImg.getAttribute('src') == '/img/nature-3.jpg' && newImg.getAttribute('data-nature') == 3) {
-        newImg.setAttribute('src', '/img/nature-4.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-3.jpg' && newImg.getAttribute('data-nature') == 3) {
+        newImg.setAttribute('src', './img/nature-4.jpg');
         newImg.setAttribute('data-nature', "4");
-    } else if (newImg.getAttribute('src') == '/img/nature-4.jpg' && newImg.getAttribute('data-nature') == 4) {
-        newImg.setAttribute('src', '/img/nature-5.jpg');
+    } else if (newImg.getAttribute('src') == './img/nature-4.jpg' && newImg.getAttribute('data-nature') == 4) {
+        newImg.setAttribute('src', './img/nature-5.jpg');
         newImg.setAttribute('data-nature', "5");
-    } else if (newImg.getAttribute('src') == '/img/nature-5.jpg' && newImg.getAttribute('data-nature') == 5) {
+    } else if (newImg.getAttribute('src') == './img/nature-5.jpg' && newImg.getAttribute('data-nature') == 5) {
         newImg.setAttribute('data-nature', "6");
         newImg.classList.add('hidden');
         newVideo.classList.remove('hidden');
         videoOne.classList.add('borderRed');
-        newVideo.setAttribute('src', '/video/nature.mp4');
-    } else if (newImg.getAttribute('src') == '/img/nature-5.jpg' && newImg.getAttribute('data-nature') == 6) {
+        newVideo.setAttribute('src', './video/nature.mp4');
+    } else if (newImg.getAttribute('src') == './img/nature-5.jpg' && newImg.getAttribute('data-nature') == 6) {
         newVideo.classList.add('hidden');
         videoOne.classList.remove('borderRed');
         newVideo.removeAttribute('src');
         newImg.classList.remove('hidden');
-        newImg.setAttribute('src', '/img/nature-1.jpg');
+        newImg.setAttribute('src', './img/nature-1.jpg');
         newImg.setAttribute('data-nature', "1");
     }
 
