@@ -36,6 +36,12 @@ btnSlideLeft.onclick = function () {
     } else if (newImg.getAttribute('src') == './img/nature-2.jpg' && newImg.getAttribute('data-nature') == 2) {
         newImg.setAttribute('src', './img/nature-1.jpg');
         newImg.setAttribute('data-nature', "1");
+    } else if (newImg.getAttribute('src') == './img/nature-5.jpg' && newImg.getAttribute('data-nature') == 6) {
+        newImg.setAttribute('src', './img/nature-5.jpg');
+        newImg.setAttribute('data-nature', "5");
+        newVideo.classList.add('hidden');
+        videoOne.classList.remove('borderRed');
+        newImg.classList.remove('hidden');
     }
 
     function check() {
@@ -104,12 +110,9 @@ btnSlideRight.onclick = function () {
         videoOne.classList.add('borderRed');
         newVideo.setAttribute('src', './video/nature.mp4');
     } else if (newImg.getAttribute('src') == './img/nature-5.jpg' && newImg.getAttribute('data-nature') == 6) {
-        newVideo.classList.add('hidden');
-        videoOne.classList.remove('borderRed');
-        newVideo.removeAttribute('src');
-        newImg.classList.remove('hidden');
-        newImg.setAttribute('src', './img/nature-1.jpg');
-        newImg.setAttribute('data-nature', "1");
+        showDataNature()
+    } else if (newImg.getAttribute('src') == './img/nature-1.jpg' && newImg.getAttribute('data-nature') == 6) {
+        showDataNature()
     }
 
     function check() {
@@ -156,4 +159,13 @@ btnSlideRight.onclick = function () {
         }
     }
     checkFive();
+}
+
+function showDataNature() {
+    newVideo.classList.add('hidden');
+    videoOne.classList.remove('borderRed');
+    newVideo.removeAttribute('src');
+    newImg.classList.remove('hidden');
+    newImg.setAttribute('src', './img/nature-1.jpg');
+    newImg.setAttribute('data-nature', "1");
 }
