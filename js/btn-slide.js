@@ -16,7 +16,7 @@ btnSlideLeft.onclick = function () {
         newImg.classList.add('hidden');
         newVideo.classList.remove('hidden');
         videoOne.classList.add('borderRed');
-        newVideo.setAttribute('src', '../video/nature.mp4');
+        newVideo.setAttribute('src', './video/nature.mp4');
     } else if (newImg.getAttribute('src') == './img/nature-1.jpg' && newImg.getAttribute('data-nature') == 6) {
         newVideo.classList.add('hidden');
         videoOne.classList.remove('borderRed');
